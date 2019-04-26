@@ -33,6 +33,10 @@ a{
     color:$light-gray;
 }
 
+h3{
+    font-size: 150%;
+}
+
 @mixin tablet {
     @media (min-width: #{$tablet-width}) {
       @content;
@@ -46,3 +50,4 @@ a{
 }
 
 @import 'header.scss';
+@import 'login_signup.scss';

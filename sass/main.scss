@@ -1,0 +1,48 @@
+$primary-color:#d00255;
+$secondary-color:#50dae3;
+$light-gray:#ececec;
+
+$logo-height-mobile:50px;
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.container{
+    margin: 0px auto; 
+}
+
+header{
+    box-shadow: 0px 1px 11px #88888840;
+}
+
+a{
+    text-decoration: none;
+    color:$light-gray;
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+      @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+      @content;
+    }
+}
+
+@import 'header.scss';

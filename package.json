@@ -1,0 +1,16 @@
+{
+  "name": "core-xt",
+  "version": "1.0.0",
+  "description": "Shopping Cart Project Assignment for core xt training ",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/style.css",
+    "run:sass":"node-sass sass/main.scss css/style.css -w",
+    "start": "live-server"
+  },
+  "author": "Lalit Chaudhary",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

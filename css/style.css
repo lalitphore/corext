@@ -53,7 +53,7 @@ h3 {
       width: 26px;
       text-align: center;
       border-radius: 100px;
-      color: #fff;
+      color: #ffffff;
       font-size: 75%; }
     .header__cart__items {
       display: none; }
@@ -161,11 +161,11 @@ h3 {
       -webkit-appearance: none;
       display: block;
       background: none;
-      color: #636363;
+      color: #999;
       width: 100%;
       border: none;
       border-radius: 0;
-      border-bottom: 1px solid #757575; }
+      border-bottom: 1px solid #999; }
       .login-box__form__group input:focus, .signup-box__form__group input:focus {
         outline: none; }
         .login-box__form__group input:focus ~ .bar:before, .login-box__form__group input:focus ~ .bar:after, .signup-box__form__group input:focus ~ .bar:before, .signup-box__form__group input:focus ~ .bar:after {
@@ -187,7 +187,7 @@ h3 {
       top: 10px;
       transition: all 0.2s ease; }
     .login-box__form__group button, .signup-box__form__group button {
-      background-color: #d10256;
+      background-color: #d00255;
       border: none;
       width: 100%;
       padding: 10px;
@@ -203,7 +203,7 @@ h3 {
         width: 0;
         bottom: 1px;
         position: absolute;
-        background: #4a89dc;
+        background: #50dae3;
         transition: all 0.2s ease; }
       .login-box__form__group .bar:before, .signup-box__form__group .bar:before {
         left: 50%; }
@@ -227,7 +227,7 @@ h3 {
 
 @keyframes inputHighlighter {
   from {
-    background: #d10256; }
+    background: #d00255; }
   to {
     width: 0;
     background: transparent; } }

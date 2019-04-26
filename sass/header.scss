@@ -40,7 +40,7 @@
             width: 26px;
             text-align: center;
             border-radius: 100px;
-            color: #fff;
+            color: $white-color;
             font-size: 75%;
         }
 
@@ -64,7 +64,7 @@
         top: 60px;
         width: 35%;
         text-align: center;
-        background-color: #000;
+        background-color: $black-color;
         padding: 20px;
         font-size: 75%;
     }
@@ -105,7 +105,7 @@
 
             &__items{
                 display: inline-block;
-                color:#000;
+                color:$black-color;
                 font-size: 85%;
                 margin-left: 42px;
                 margin-top: 5px;
@@ -156,7 +156,7 @@
             }
 
             a{
-                color:#000;
+                color:$black-color;
             }
 
         }

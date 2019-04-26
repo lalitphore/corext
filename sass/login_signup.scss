@@ -27,11 +27,11 @@
             -webkit-appearance: none;
             display: block;
             background: none;
-            color: #636363;
+            color: $dark-gray;
             width: 100%;
             border: none;
             border-radius: 0;
-            border-bottom: 1px solid #757575; 
+            border-bottom: 1px solid $dark-gray; 
             &:focus 
             {
                 outline: none; 
@@ -50,13 +50,13 @@
                 top: -20px;
                 transform: scale(0.75);
                 left: -2px;
-                color: #50dae3; 
+                color: $secondary-color; 
             }
         }
                 
         label 
         {
-            color: #999;
+            color: $dark-gray;
             font-size: 18px;
             font-weight: normal;
             position: absolute;
@@ -68,11 +68,11 @@
     
         button
         {
-            background-color: #d10256;
+            background-color: $primary-color;
             border: none;
             width: 100%;
             padding: 10px;
-            color: #ffffff;
+            color: $white-color;
             font-size: 18px;
         }
     
@@ -88,7 +88,7 @@
                 width: 0;
                 bottom: 1px;
                 position: absolute;
-                background: #4a89dc;
+                background: $secondary-color;
                 transition: all 0.2s ease; 
             }
             &:before 
@@ -135,7 +135,7 @@
 {
     from 
     {
-        background: #d10256; 
+        background: $primary-color; 
     }
     to 
     {

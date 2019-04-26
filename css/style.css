@@ -223,7 +223,7 @@ h3 {
     flex-basis: 50%; }
   .login-box__form, .signup-box__form {
     flex-basis: 50%;
-    padding: 30px 0px; } }
+    flex-basis: 50%; } }
 
 @keyframes inputHighlighter {
   from {
@@ -231,3 +231,21 @@ h3 {
   to {
     width: 0;
     background: transparent; } }
+
+.footer {
+  display: flex;
+  background-color: #ececec; }
+  .footer__wrapper {
+    width: 100%; }
+    .footer__wrapper__copyright {
+      flex: 1;
+      padding: 1% 1%;
+      font-size: 55%;
+      text-align: center; }
+
+@media (min-width: 768px) {
+  .footer__wrapper {
+    padding: 0 100px; }
+    .footer__wrapper__copyright {
+      font-size: 70%;
+      text-align: left; } }

@@ -1,4 +1,4 @@
-.login-box{
+.login-box,.signup-box{  
     display: flex;
     flex-wrap: wrap;
     padding: 40px 22px;
@@ -114,13 +114,9 @@
     }
 }
 
-//For Signup
-{
-    @extend .login-box;
-}
 
 @include tablet {
-    .login-box{
+    .login-box,.signup-box{
         &__details{
             flex-basis: 50%;
             &__desc{
@@ -129,12 +125,8 @@
         }
         &__form{
             flex-basis: 50%;
-            padding: 30px 0px;
+            flex-basis: 50%;
         }
-    }
-
-    {
-        @extend .login-box;
     }
 }
 
@@ -151,4 +143,3 @@
         background: transparent; 
     } 
 }
-  

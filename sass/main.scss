@@ -1,6 +1,7 @@
 $primary-color:#d00255;
 $secondary-color:#50dae3;
 $light-gray:#ececec;
+
 $dark-gray:#999;
 $white-color:#ffffff;
 $black-color:#000;
@@ -40,6 +41,65 @@ h3{
     font-size: 150%;
 }
 
+h4{
+    font-size: 90%;
+}
+
+
+//Button Style
+.btn-1,button
+{
+    background-color: $primary-color;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    color: $white-color;
+}
+
+
+//Bottom Shadow Effect
+
+.section-shadow-box{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: $white-color;
+
+    & > div:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        width: 60%;
+        padding: 8% 0px;
+        background: $white-color;
+        border-radius: 30%;
+        box-shadow: 0 10px 17px #0000005c;
+        z-index: -1;
+        transform: translate(-50%);
+    }
+}
+
+
+//Down Arrow Icon
+.arrow-icon{
+    border: solid $white-color;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 6px;
+}
+
+.down-arrow-icon{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.up-arrow-icon {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+
 @mixin tablet {
     @media (min-width: #{$tablet-width}) {
       @content;
@@ -54,4 +114,7 @@ h3{
 
 @import 'header.scss';
 @import 'login_signup.scss';
+@import 'slider.scss';
+@import 'home_page.scss';
+@import 'plp.scss';
 @import 'footer.scss';

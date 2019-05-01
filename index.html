@@ -11,23 +11,24 @@
         <header>
             <div class="container header">       
                 <div class="header__logo-box">
-                    <img src="images/logo.png" class="header__logo-box__image"/>
+                    <img src="images/logo.png" alt="logo" class="header__logo-box__image"/>
                 </div>
 
                 <div class="header__nav-box">
                     <nav class="header__menu" id="header__menu">
-                        <ul class="header__menu__1">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Products</a></li>
-                        </ul>
                         <ul class="header__menu__2">
-                            <li><a href="#">Signin</a></li>
-                            <li><a href="#">Register</a></li>
+                            <li><a href="signin.html">Signin</a></li>
+                            <li><a href="register.html">Register</a></li>
                         </ul>
+                        <ul class="header__menu__1">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                        </ul>
+                        
                     </nav>
 
                     <div class="header__cart">
-                        <a href="#">
+                        <a href="cart.html">
                             <i class="header__cart__icon">
                                 <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" width="30px" fill="#d00255" xml:space="preserve">
@@ -43,7 +44,90 @@
             </div>
         </header>
 
+        <section>
+                <div class="container section-shadow-box">
+                    <div class="slideshow-container">
+                        <div class="mySlides1 slideshow-container__slides">
+                            <img src="images/offers/offer1.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides1 slideshow-container__slides">
+                            <img src="images/offers/offer2.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides1 slideshow-container__slides">
+                            <img src="images/offers/offer3.jpg" style="width:100%">
+                        </div>
+                        
+                        <a class="slideshow-container__prev" onclick="plusSlides(-1, 0)">PREV</a>
+                        <a class="slideshow-container__next" onclick="plusSlides(1, 0)">NEXT</a>
+
+                        <div class="slideshow-container__dots">
+                            <span class="slideshow-container__dots__dot" onclick="gotoslide(1,0)"></span> 
+                            <span class="slideshow-container__dots__dot" onclick="gotoslide(2,0)"></span> 
+                            <span class="slideshow-container__dots__dot" onclick="gotoslide(3,0)"></span> 
+                        </div>
+                    </div>
+                </div>
+                        
+                <!-- The dots/circles -->
+        </section>
+
+        <section class="product-category-section">
+            <div class="container">
+                <div class="section-shadow-box hp-product-category">
+                    <div class="hp-product-category__box">
+                        <div class="hp-product-category__box__img">
+                            <img src="images/category/fruits.png" alt="baby image" />
+                        </div>
+                        <div class="hp-product-category__box__detail">
+                            <h4>Beverages</h4>
+                            <p>Our beverage department will ensure your fridge is always fully stocked. Shop for soda, juice, beer and more. </p>
+                            <a href="#" class="btn-1">Explore Beverages</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-shadow-box hp-product-category">
+                    <div class="hp-product-category__box">
+                        <div class="hp-product-category__box__img">
+                            <img src="images/category/beauty.png" alt="baby image" />
+                        </div>
+                        <div class="hp-product-category__box__detail">
+                            <h4>Beuty And Hygiene</h4>
+                            <p>Buy beauty and personal care products online in India at best prices. </p>
+                            <a href="#" class="btn-1">Explore beauty-hygiene</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-shadow-box hp-product-category">
+                    <div class="hp-product-category__box">
+                        <div class="hp-product-category__box__img">
+                            <img src="images/category/beauty.png" alt="baby image" />
+                        </div>
+                        <div class="hp-product-category__box__detail">
+                            <h4>Beuty And Hygiene</h4>
+                            <p>Buy beauty and personal care products online in India at best prices. </p>
+                            <a href="#" class="btn-1">Explore beauty-hygiene</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer__wrapper__copyright">
+                        Copyright &copy; 2011-2019 Sabka Bazaar Grocery Supplies Pvt Ltd
+                    </div>
+                </div>
+            </div>
+        </footer>
 <script>
+    /*  Mobile Nav Menu Javascript */
+
     document.getElementById("mobile-nav-icon").addEventListener("click", function(){
         let navElement = document.getElementById('mobile-nav-icon');
         if(navElement.classList.contains("cross-icon"))
@@ -59,6 +143,31 @@
             document.getElementById('header__menu').style.display = "block";
         }
     });
+
+    /*  Slider Javascript */
+    var slideIndex = [1];
+    var slideId = ["mySlides1"]
+    showSlides(1, 0);
+
+    function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+    }
+
+    function gotoslide(n, no){
+        showSlides(slideIndex[no] = n, no);
+    }
+
+    function showSlides(n, no) {
+    var i;
+    var x = document.getElementsByClassName(slideId[no]);
+    
+    if (n > x.length) {slideIndex[no] = 1}    
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    x[slideIndex[no]-1].style.display = "block";  
+    }
 </script>
     </body>
 </html>

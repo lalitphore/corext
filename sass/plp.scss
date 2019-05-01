@@ -74,18 +74,20 @@
             &__details
             {
                 flex-basis: 55%;
-                background-color: #ececec;
-                font-size: 60%;
-                line-height: 12px;
-                padding: 5px;
-                height: fit-content;
+                p
+                {
+                    background-color: #ececec;
+                    font-size: 80%;
+                    line-height: 18px;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    height: fit-content;
+                }
             }
 
             &__price
             {
-                flex-basis: 100%;
-                width: 100%;
-                text-align: right;
+                flex-basis: 100%;                
                 a
                 {
                     display: block;
@@ -96,7 +98,6 @@
                     content: ' @ ';
                 }
                 button{
-                    width: 50%;
                     font-size: 70%;
                 }
             }
@@ -145,6 +146,7 @@
             flex-direction: row;
             &__item
             {
+                position: relative;
                 flex-basis: 50%;
                 &__details
                 {
@@ -152,8 +154,10 @@
                 }
                 &__price
                 {
-                    margin-top: 10px;
-                    flex-basis: 100%;
+                    flex-basis: unset;
+                    position: absolute;
+                    left: 12px;
+                    width: 88%;
                     button{
                         width: 100%;
                     }
@@ -186,7 +190,7 @@
                 {
                     position: relative;
                     text-align: right;
-                    font-size: 85%;
+                    
                     button
                     {
                         width: 50%;

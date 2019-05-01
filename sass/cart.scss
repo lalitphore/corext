@@ -1,0 +1,124 @@
+.cart-container
+{
+    height: 100vh;
+    .container
+    {
+        padding:20px 0px;   
+        height: 70%;
+        overflow-y: auto;
+    }
+    background-color: $light-gray;
+    &__items
+    {
+       margin: 20px 0px;
+       background-color: $white-color;
+       padding: 10px 20px;
+       &__heading
+       {
+            display: inline;
+       } 
+    }
+}
+
+//Cart Products
+.cart-product
+{
+    display: flex;
+    background-color: $white-color;
+    padding: 10px;
+    margin: 20px 0px;
+    &__image
+    {
+        flex-basis: 10%;
+        
+        img
+        {
+            width: auto;
+            height: 80px;
+        }
+    }
+
+    &__info
+    {
+        display: flex;
+        flex-basis: 90%;
+        padding: 0px 10px;
+        flex-direction: column;
+        &__heading
+        {
+            flex-basis: 50%;
+        }
+        &__details
+        {
+            font-size: 85%;
+            flex-basis: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.cart-addon
+{
+    display: flex;
+    align-items: center;
+    p
+    {
+        font-size: 72%;
+    }
+    &__image
+    {
+        flex-basis: 20%;
+    }
+
+    &__details
+    {
+        flex-basis: 80%;
+        padding: 0px 20px;
+    }
+}
+
+.cart-checkout
+{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    &__info
+    {
+        text-align: center;
+        p
+        {
+            font-size: 72%;
+        }
+        &__btn
+        {
+            padding: 20px;
+            margin-top: 15px;
+            display: flex;
+            &__left
+            {
+                flex-basis: 50%;
+                text-align: left;
+            }
+            &__right
+            {
+                flex-basis: 50%;
+                text-align: right;
+            }
+        }
+    }
+}
+
+
+//Cart Counter Minus Plus
+.cart-prod-btn {
+    border-radius: 6px;
+    padding: 4px 10px;
+    width: auto;
+}
+.cart-prod-qnty {
+    padding: 4px 5px;
+}
+.prod-multiply {
+    padding: 0px 10px;
+}

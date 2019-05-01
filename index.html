@@ -16,18 +16,19 @@
 
                 <div class="header__nav-box">
                     <nav class="header__menu" id="header__menu">
-                        <ul class="header__menu__1">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Products</a></li>
-                        </ul>
                         <ul class="header__menu__2">
-                            <li><a href="#">Signin</a></li>
-                            <li><a href="#">Register</a></li>
+                            <li><a href="signin.html">Signin</a></li>
+                            <li><a href="register.html">Register</a></li>
                         </ul>
+                        <ul class="header__menu__1">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                        </ul>
+                        
                     </nav>
 
                     <div class="header__cart">
-                        <a href="#">
+                        <a href="cart.html">
                             <i class="header__cart__icon">
                                 <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" width="30px" fill="#d00255" xml:space="preserve">
@@ -43,138 +44,76 @@
             </div>
         </header>
 
-        <section class="plp-container container">
-                <aside class="plp-container__sidebar">
-                    <nav>
-                        <ul class="plp-container__sidebar__categories">
-                                <li class="active"><a href="/category/5b675e5e5936635728f9fc30">Beverages</a></li>
-                                <li class=""><a href="/category/5b6899123d1a866534f516de">Bakery Cakes and Dairy</a></li>
-                                <li class=""><a href="/category/5b68994e3d1a866534f516df">Beauty and Hygiene</a></li>
-                                <li class=""><a href="/category/5b6899683d1a866534f516e0">Baby Care</a></li>
-                                <li class=""><a href="/category/5b6899953d1a866534f516e2">Fruits &amp; Vegetables</a></li>
-                        </ul>
-                        <div id="mobile-accordion-icon" class="plp-container__sidebar__mobile-icon"><i class="down-arrow-icon arrow-icon"></i></div>
-                    </nav>
-                </aside>
-                <div class="plp-container__products">
-                    <div class="plp-container__products__item">
-                        <div class="plp-container__products__item__title">
-                            <h4>Fresho Kiwi - Green, 3 pcs</h4>
+        <section>
+                <div class="container section-shadow-box">
+                    <div class="slideshow-container">
+                        <div class="mySlides1 slideshow-container__slides">
+                            <img src="images/offers/offer1.jpg" style="width:100%">
                         </div>
-                        <div class="plp-container__products__item__image">
-                                <img src="images/products/fruit-n-veg/kiwi-green.jpg" alt="product image" />
+                        
+                        <div class="mySlides1 slideshow-container__slides">
+                            <img src="images/offers/offer2.jpg" style="width:100%">
                         </div>
-                        <div class="plp-container__products__item__details">
-                            <p>
-                               The bright red coloured and heart shaped Washington apples are crunchy, juicy and slightly sweet. Washington Apples are a natural source of fibre and are fat free.
-                            </p>
+                        
+                        <div class="mySlides1 slideshow-container__slides">
+                            <img src="images/offers/offer3.jpg" style="width:100%">
                         </div>
-                        <div class="plp-container__products__item__price">
-                            <button type="button" class="btn-1">Buy Now <span class="price">Rs 100</span></button>
+                        
+                        <a class="slideshow-container__prev" onclick="plusSlides(-1, 0)">PREV</a>
+                        <a class="slideshow-container__next" onclick="plusSlides(1, 0)">NEXT</a>
+
+                        <div class="slideshow-container__dots">
+                            <span class="slideshow-container__dots__dot" onclick="gotoslide(1,0)"></span> 
+                            <span class="slideshow-container__dots__dot" onclick="gotoslide(2,0)"></span> 
+                            <span class="slideshow-container__dots__dot" onclick="gotoslide(3,0)"></span> 
                         </div>
                     </div>
-
-                    <div class="plp-container__products__item">
-                            <div class="plp-container__products__item__title">
-                                <h4>Fresho Kiwi - Green, 3 pcs</h4>
-                            </div>
-                            <div class="plp-container__products__item__image">
-                                    <img src="images/products/fruit-n-veg/kiwi-green.jpg" alt="product image" />
-                            </div>
-                            <div class="plp-container__products__item__details">
-                                <p>
-                                   The bright red coloured and heart shaped Washington apples are crunchy, juicy and slightly sweet. Washington Apples are a natural source of fibre and are fat free.
-                                </p>
-                            </div>
-                            <div class="plp-container__products__item__price">
-                                <button type="button" class="btn-1">Buy Now <span class="price">Rs 100</span></button>
-                            </div>
-                        </div>
-                        <div class="plp-container__products__item">
-                                <div class="plp-container__products__item__title">
-                                    <h4>Fresho Kiwi - Green, 3 pcs</h4>
-                                </div>
-                                <div class="plp-container__products__item__image">
-                                        <img src="images/products/fruit-n-veg/kiwi-green.jpg" alt="product image" />
-                                </div>
-                                <div class="plp-container__products__item__details">
-                                    <p>
-                                       The bright red coloured and heart shaped Washington apples are crunchy, juicy and slightly sweet. Washington Apples are a natural source of fibre and are fat free.
-                                    </p>
-                                </div>
-                                <div class="plp-container__products__item__price">
-                                    <button type="button" class="btn-1">Buy Now <span class="price">Rs 100</span></button>
-                                </div>
-                            </div>
-
-                            <div class="plp-container__products__item">
-                                <div class="plp-container__products__item__title">
-                                    <h4>Fresho Kiwi - Green, 3 pcs</h4>
-                                </div>
-                                <div class="plp-container__products__item__image">
-                                        <img src="images/products/fruit-n-veg/kiwi-green.jpg" alt="product image" />
-                                </div>
-                                <div class="plp-container__products__item__details">
-                                    <p>
-                                        The bright red coloured and heart shaped Washington apples are crunchy, juicy and slightly sweet. Washington Apples are a natural source of fibre and are fat free.
-                                    </p>
-                                </div>
-                                <div class="plp-container__products__item__price">
-                                    <button type="button" class="btn-1">Buy Now <span class="price">Rs 100</span></button>
-                                </div>
-                            </div>
-
-                            <div class="plp-container__products__item">
-                                <div class="plp-container__products__item__title">
-                                    <h4>Fresho Kiwi - Green, 3 pcs</h4>
-                                </div>
-                                <div class="plp-container__products__item__image">
-                                        <img src="images/products/fruit-n-veg/kiwi-green.jpg" alt="product image" />
-                                </div>
-                                <div class="plp-container__products__item__details">
-                                    <p>
-                                        The bright red coloured and heart shaped Washington apples are crunchy, juicy and slightly sweet. Washington Apples are a natural source of fibre and are fat free.
-                                    </p>
-                                </div>
-                                <div class="plp-container__products__item__price">
-                                    <button type="button" class="btn-1">Buy Now <span class="price">Rs 100</span></button>
-                                </div>
-                            </div>
-
-                            <div class="plp-container__products__item">
-                                <div class="plp-container__products__item__title">
-                                    <h4>Fresho Kiwi - Green, 3 pcs</h4>
-                                </div>
-                                <div class="plp-container__products__item__image">
-                                        <img src="images/products/fruit-n-veg/kiwi-green.jpg" alt="product image" />
-                                </div>
-                                <div class="plp-container__products__item__details">
-                                    <p>
-                                        The bright red coloured and heart shaped Washington apples are crunchy, juicy and slightly sweet. Washington Apples are a natural source of fibre and are fat free.
-                                    </p>
-                                </div>
-                                <div class="plp-container__products__item__price">
-                                    <button type="button" class="btn-1">Buy Now <span class="price">Rs 100</span></button>
-                                </div>
-                            </div>
-
-                            <div class="plp-container__products__item">
-                                <div class="plp-container__products__item__title">
-                                    <h4>Fresho Kiwi - Green, 3 pcs</h4>
-                                </div>
-                                <div class="plp-container__products__item__image">
-                                        <img src="images/products/fruit-n-veg/kiwi-green.jpg" alt="product image" />
-                                </div>
-                                <div class="plp-container__products__item__details">
-                                    <p>
-                                        The bright red coloured and heart shaped Washington apples are crunchy, juicy and slightly sweet. Washington Apples are a natural source of fibre and are fat free.
-                                    </p>
-                                </div>
-                                <div class="plp-container__products__item__price">
-                                    <button type="button" class="btn-1">Buy Now <span class="price">Rs 100</span></button>
-                                </div>
-                            </div>
                 </div>
+                        
+                <!-- The dots/circles -->
+        </section>
+
+        <section class="product-category-section">
+            <div class="container">
+                <div class="section-shadow-box hp-product-category">
+                    <div class="hp-product-category__box">
+                        <div class="hp-product-category__box__img">
+                            <img src="images/category/fruits.png" alt="baby image" />
+                        </div>
+                        <div class="hp-product-category__box__detail">
+                            <h4>Beverages</h4>
+                            <p>Our beverage department will ensure your fridge is always fully stocked. Shop for soda, juice, beer and more. </p>
+                            <a href="#" class="btn-1">Explore Beverages</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-shadow-box hp-product-category">
+                    <div class="hp-product-category__box">
+                        <div class="hp-product-category__box__img">
+                            <img src="images/category/beauty.png" alt="baby image" />
+                        </div>
+                        <div class="hp-product-category__box__detail">
+                            <h4>Beuty And Hygiene</h4>
+                            <p>Buy beauty and personal care products online in India at best prices. </p>
+                            <a href="#" class="btn-1">Explore beauty-hygiene</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-shadow-box hp-product-category">
+                    <div class="hp-product-category__box">
+                        <div class="hp-product-category__box__img">
+                            <img src="images/category/beauty.png" alt="baby image" />
+                        </div>
+                        <div class="hp-product-category__box__detail">
+                            <h4>Beuty And Hygiene</h4>
+                            <p>Buy beauty and personal care products online in India at best prices. </p>
+                            <a href="#" class="btn-1">Explore beauty-hygiene</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <footer>
@@ -205,31 +144,30 @@
         }
     });
 
-    /*  Category Accordion */
-    document.getElementById("mobile-accordion-icon").addEventListener("click",function(){
-        var listItems = document.querySelectorAll('.plp-container__sidebar__categories > li');
-        
-        if(this.classList.contains('nav-open'))
-        {
-            for(var i = 0; i < listItems.length; i++) {
-                listItems[i].style.display = "none";
-            }
-            var activeLi = document.querySelectorAll('.plp-container__sidebar__categories > li.active');
-            activeLi[0].style.display="block";
-            this.classList.remove("nav-open");
-            this.children[0].classList.add('down-arrow-icon');
-            this.children[0].classList.remove('up-arrow-icon');
-        }
-        else
-        {
-            for(var i = 0; i < listItems.length; i++) {
-                listItems[i].style.display = "block";
-            }
-            this.children[0].classList.remove('down-arrow-icon');
-            this.children[0].classList.add('up-arrow-icon');
-            this.classList.add("nav-open");
-        }
-    });
+    /*  Slider Javascript */
+    var slideIndex = [1];
+    var slideId = ["mySlides1"]
+    showSlides(1, 0);
+
+    function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+    }
+
+    function gotoslide(n, no){
+        showSlides(slideIndex[no] = n, no);
+    }
+
+    function showSlides(n, no) {
+    var i;
+    var x = document.getElementsByClassName(slideId[no]);
+    
+    if (n > x.length) {slideIndex[no] = 1}    
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    x[slideIndex[no]-1].style.display = "block";  
+    }
 </script>
     </body>
 </html>

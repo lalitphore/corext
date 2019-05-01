@@ -54,6 +54,7 @@ h4{
     width: 100%;
     padding: 10px;
     color: $white-color;
+    border-radius: 6px;
 }
 
 
@@ -80,8 +81,7 @@ h4{
     }
 }
 
-
-//Down Arrow Icon
+//Arrow Icons
 .arrow-icon{
     border: solid $white-color;
     border-width: 0 1px 1px 0;
@@ -99,6 +99,12 @@ h4{
     -webkit-transform: rotate(-135deg);
 }
 
+.right-arrow-icon {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+}
 
 @mixin tablet {
     @media (min-width: #{$tablet-width}) {
@@ -117,4 +123,5 @@ h4{
 @import 'slider.scss';
 @import 'home_page.scss';
 @import 'plp.scss';
+@import 'cart.scss';
 @import 'footer.scss';

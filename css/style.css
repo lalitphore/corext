@@ -33,6 +33,9 @@ h4 {
   color: #ffffff;
   border-radius: 6px; }
 
+.hidden {
+  display: none; }
+
 .section-shadow-box {
   position: relative;
   margin-top: 20px;
@@ -467,7 +470,6 @@ h4 {
           content: 'MRP '; } }
 
 .cart-container {
-  height: 100vh;
   background-color: #ececec; }
   .cart-container .container {
     padding: 20px 0px;
@@ -514,24 +516,20 @@ h4 {
     flex-basis: 80%;
     padding: 0px 20px; }
 
-.cart-checkout {
-  position: fixed;
-  bottom: 0;
-  width: 100%; }
-  .cart-checkout__info {
-    text-align: center; }
-    .cart-checkout__info p {
-      font-size: 72%; }
-    .cart-checkout__info__btn {
-      padding: 20px;
-      margin-top: 15px;
-      display: flex; }
-      .cart-checkout__info__btn__left {
-        flex-basis: 50%;
-        text-align: left; }
-      .cart-checkout__info__btn__right {
-        flex-basis: 50%;
-        text-align: right; }
+.cart-checkout__info {
+  text-align: center; }
+  .cart-checkout__info p {
+    font-size: 72%; }
+  .cart-checkout__info__btn {
+    padding: 20px;
+    margin-top: 15px;
+    display: flex; }
+    .cart-checkout__info__btn__left {
+      flex-basis: 50%;
+      text-align: left; }
+    .cart-checkout__info__btn__right {
+      flex-basis: 50%;
+      text-align: right; }
 
 .cart-prod-btn {
   border-radius: 6px;
@@ -543,6 +541,27 @@ h4 {
 
 .prod-multiply {
   padding: 0px 10px; }
+
+.cart-container-popover {
+  display: none;
+  width: 400%;
+  position: absolute;
+  z-index: 3;
+  top: 101%;
+  right: 0; }
+
+.background-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000000c9;
+  z-index: 2;
+  display: none; }
+
+.header__cart:hover .cart-container-popover {
+  display: block; }
 
 .footer {
   display: flex;
